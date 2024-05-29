@@ -1,0 +1,44 @@
+<!DOCTYPE html> <!-- ประกาศประเภทของเอกสารเป็น HTML5 -->
+<html lang="en"> <!-- กำหนดภาษาหลักของเอกสารเป็นภาษาอังกฤษ -->
+
+<head>
+    <meta charset="UTF-8"> <!-- กำหนดการเข้ารหัสตัวอักษรเป็น UTF-8 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- กำหนดให้ใช้ IE ในโหมด edge -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- กำหนดให้ viewport มีความกว้างเท่ากับขนาดของอุปกรณ์และกำหนดระดับการซูมเป็น 1.0 -->
+    <link rel="stylesheet" href="style.css"> <!-- ลิงก์ไปยังไฟล์ CSS ที่ชื่อ style.css -->
+    <title>#1 - Pixel Art Generator | L </title> <!-- ชื่อของเอกสารที่จะแสดงในแท็บของเบราว์เซอร์ -->
+</head>
+
+<body> <!-- เริ่มต้นเนื้อหาของเอกสาร -->
+
+    <div class="wrapper"> <!-- ส่วนที่ครอบเนื้อหาทั้งหมด -->
+        <div class="options"> <!-- ส่วนสำหรับจัดการตัวเลือกต่างๆ -->
+            <div class="opt-wrapper"> <!-- กลุ่มของตัวเลือกที่จัดเรียงในแนวนอน -->
+                <div class="slider"> <!-- ส่วนสำหรับตัวเลื่อน (slider) -->
+                    <label for="width-range">Grid Width</label> <!-- ป้ายกำกับสำหรับตัวเลื่อนความกว้างของกริด -->
+                    <input type="range" id="width-range" min="1" max="35"> <!-- ตัวเลื่อนความกว้างของกริด ที่มีค่าต่ำสุดเป็น 1 และค่าสูงสุดเป็น 35 -->
+                    <span id="width-value">00</span> <!-- ส่วนที่แสดงค่าปัจจุบันของความกว้าง -->
+                </div>
+                <div class="slider"> <!-- ส่วนสำหรับตัวเลื่อน (slider) -->
+                    <label for="height-range">Grid Height</label> <!-- ป้ายกำกับสำหรับตัวเลื่อนความสูงของกริด -->
+                    <input type="range" id="height-range" min="1" max="35"> <!-- ตัวเลื่อนความสูงของกริด ที่มีค่าต่ำสุดเป็น 1 และค่าสูงสุดเป็น 35 -->
+                    <span id="height-value">00</span> <!-- ส่วนที่แสดงค่าปัจจุบันของความสูง -->
+                </div>
+            </div>
+
+            <div class="opt-wrapper"> <!-- กลุ่มของตัวเลือกที่จัดเรียงในแนวนอน -->
+                <button id="submit-grid">Create Grid</button> <!-- ปุ่มสำหรับสร้างกริด -->
+                <button id="clear-grid">Clear Grid</button> <!-- ปุ่มสำหรับล้างกริด -->
+                <input type="color" id="color-input"> <!-- อินพุตสำหรับเลือกสี -->
+                <button id="erase-btn">Erase</button> <!-- ปุ่มสำหรับลบสี -->
+                <button id="paint-btn">Paint</button> <!-- ปุ่มสำหรับวาดสี -->
+            </div>
+
+        </div>
+        <div class="container"></div> <!-- ส่วนสำหรับแสดงกริด -->
+    </div>
+
+    <script src="index.js"></script> <!-- ลิงก์ไปยังไฟล์ JavaScript ที่ชื่อ index.js -->
+</body>
+
+</html>
